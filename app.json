@@ -1,0 +1,64 @@
+{
+  "expo": {
+    "name": "trip2",
+    "slug": "trip2",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "trip2",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "config": {
+        "googleMapsApiKey": "AIzaSyCBmNH24UFjQZtNcIRxeeLSTFZnZURAnbQ"
+      },
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Tripi uses the microphone to hear your voice commands."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "RECORD_AUDIO",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "RECORD_AUDIO"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCBmNH24UFjQZtNcIRxeeLSTFZnZURAnbQ"
+        }
+      },
+      "package": "com.guddu2005.trip2"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "extra": {
+      "EXPO_PUBLIC_GOOGLE_MAPS_API_KEY": "AIzaSyCBmNH24UFjQZtNcIRxeeLSTFZnZURAnbQ",
+      "EXPO_PUBLIC_GEMINI_API_KEY": "AIzaSyCHm4GTdgmlqm07AGmNSaA_Lsp5y9eNVSs"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-maps"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
